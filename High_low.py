@@ -4,8 +4,8 @@ print(f"Please think of a number between {low} ,{high} ")
 input("Press ENTER to start")
 
 guesses=1
-while True:
-    print(f"\t Guessing in the range of {low} to {high}")
+while low!=high:
+    #print(f"\t Guessing in the range of {low} to {high}")
     guess=low+(high-low)//2
     high_low=input(f"My guess is {guess}.should I guess higher or lower?Enter h or l,or c if my guess was correct.").casefold()
 
@@ -24,4 +24,7 @@ while True:
         print("Please enter h,l or c")
     guesses=guesses+1
     #in augmented assignment we write this in guesses+=1 and it means assigning the variables in a shortcut way
-    
+
+else:
+    print(f"You thought the number{low}")
+    print(f"I got it in {guesses} guesses")

@@ -12,4 +12,5 @@ while chosen not in directions:
     if chosen.casefold()=="quit":
         print("Game over")
         break
-print("aren't you glad you out of there")
+else:
+    print("aren't you glad you out of there")
