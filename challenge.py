@@ -1,5 +1,5 @@
 choice="-"
-while choice!=0:
+while choice!="0":
     if choice in "12345":
         print(f"You chose {choice}")
     else:
